@@ -28,7 +28,7 @@ nav a {
 
 .page-layout {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
     padding: 20px;
 }
@@ -52,5 +52,18 @@ footer {
 @media (min-width: 600px) {
     nav {
         flex-direction: row;
+    }
+}
+@media (min-width: 700px) {
+    .page-layout {
+        flex-direction: row;
+    }
+
+    main {
+        flex: 2;
+    }
+
+    aside {
+        flex: 1;
     }
 }
